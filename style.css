@@ -1,0 +1,71 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+
+.sus {
+    width: 70px;
+    height: 70px;
+    background: url(images/cyan-among-us-character.png) no-repeat;
+    background-size: 50px 50px;
+    position: relative;
+    top: 155px;
+}
+
+.impostor {
+    width: 50px;
+    height: 50px;
+    background-image: url(images/-11608109945h5l4xi1jzf.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 80px;
+    left: 580px;
+    animation: impostorMov 2s infinite linear;
+}
+
+
+/* Animation */
+@keyframes impostorMov {
+    0% {
+        left: 580px;
+    }
+    
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump .3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 80px;
+
+    15% {
+        top: 15px;   
+    }
+    
+    30% {
+        top: 30px;    
+    }    
+    
+    45% {
+        top: 450px;    
+    }    
+        
+    60% {
+        top: 60px;    
+    }
+        
+    75% {
+        top: 75px;    
+    }    
+    
+    100% {
+        top: 80px;
+    }
+}
